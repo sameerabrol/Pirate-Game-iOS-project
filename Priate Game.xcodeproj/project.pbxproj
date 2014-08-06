@@ -21,6 +21,12 @@
 		B6D14E6119912CC900930924 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D14E4319912CC900930924 /* UIKit.framework */; };
 		B6D14E6919912CC900930924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D14E6719912CC900930924 /* InfoPlist.strings */; };
 		B6D14E6B19912CC900930924 /* Priate_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E6A19912CC900930924 /* Priate_GameTests.m */; };
+		B6D14E77199169F000930924 /* SATile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E76199169F000930924 /* SATile.m */; };
+		B6D14E7B19917FEA00930924 /* SAFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E7A19917FEA00930924 /* SAFactory.m */; };
+		B6D14E7E199277AB00930924 /* SAWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E7D199277AB00930924 /* SAWeapon.m */; };
+		B6D14E811992780400930924 /* SAArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E801992780400930924 /* SAArmor.m */; };
+		B6D14E8419927AF400930924 /* SACharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E8319927AF400930924 /* SACharacter.m */; };
+		B6D14E8719928DAB00930924 /* SABoss.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D14E8619928DAB00930924 /* SABoss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		B6D14E6619912CC900930924 /* Priate GameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Priate GameTests-Info.plist"; sourceTree = "<group>"; };
 		B6D14E6819912CC900930924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6D14E6A19912CC900930924 /* Priate_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Priate_GameTests.m; sourceTree = "<group>"; };
+		B6D14E75199169F000930924 /* SATile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SATile.h; sourceTree = "<group>"; };
+		B6D14E76199169F000930924 /* SATile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SATile.m; sourceTree = "<group>"; };
+		B6D14E7919917FEA00930924 /* SAFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFactory.h; sourceTree = "<group>"; };
+		B6D14E7A19917FEA00930924 /* SAFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFactory.m; sourceTree = "<group>"; };
+		B6D14E7C199277AB00930924 /* SAWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWeapon.h; sourceTree = "<group>"; };
+		B6D14E7D199277AB00930924 /* SAWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWeapon.m; sourceTree = "<group>"; };
+		B6D14E7F1992780400930924 /* SAArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAArmor.h; sourceTree = "<group>"; };
+		B6D14E801992780400930924 /* SAArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAArmor.m; sourceTree = "<group>"; };
+		B6D14E8219927AF400930924 /* SACharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SACharacter.h; sourceTree = "<group>"; };
+		B6D14E8319927AF400930924 /* SACharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SACharacter.m; sourceTree = "<group>"; };
+		B6D14E8519928DAB00930924 /* SABoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SABoss.h; sourceTree = "<group>"; };
+		B6D14E8619928DAB00930924 /* SABoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SABoss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +135,7 @@
 				B6D14E5119912CC900930924 /* Main.storyboard */,
 				B6D14E5419912CC900930924 /* SAViewController.h */,
 				B6D14E5519912CC900930924 /* SAViewController.m */,
+				B6D14E74199169A300930924 /* Model */,
 				B6D14E5719912CC900930924 /* Images.xcassets */,
 				B6D14E4619912CC900930924 /* Supporting Files */,
 			);
@@ -150,6 +169,33 @@
 				B6D14E6719912CC900930924 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D14E74199169A300930924 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6D14E7819917FBC00930924 /* Factory */,
+				B6D14E75199169F000930924 /* SATile.h */,
+				B6D14E76199169F000930924 /* SATile.m */,
+				B6D14E7C199277AB00930924 /* SAWeapon.h */,
+				B6D14E7D199277AB00930924 /* SAWeapon.m */,
+				B6D14E7F1992780400930924 /* SAArmor.h */,
+				B6D14E801992780400930924 /* SAArmor.m */,
+				B6D14E8219927AF400930924 /* SACharacter.h */,
+				B6D14E8319927AF400930924 /* SACharacter.m */,
+				B6D14E8519928DAB00930924 /* SABoss.h */,
+				B6D14E8619928DAB00930924 /* SABoss.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6D14E7819917FBC00930924 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B6D14E7919917FEA00930924 /* SAFactory.h */,
+				B6D14E7A19917FEA00930924 /* SAFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D14E5019912CC900930924 /* SAAppDelegate.m in Sources */,
+				B6D14E8419927AF400930924 /* SACharacter.m in Sources */,
+				B6D14E77199169F000930924 /* SATile.m in Sources */,
 				B6D14E5619912CC900930924 /* SAViewController.m in Sources */,
+				B6D14E7B19917FEA00930924 /* SAFactory.m in Sources */,
 				B6D14E4C19912CC900930924 /* main.m in Sources */,
+				B6D14E7E199277AB00930924 /* SAWeapon.m in Sources */,
+				B6D14E811992780400930924 /* SAArmor.m in Sources */,
+				B6D14E8719928DAB00930924 /* SABoss.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
